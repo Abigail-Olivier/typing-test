@@ -1,6 +1,7 @@
 import tkinter as tk
 from text_generator import generate_typing_text
 
+# ----------------------------- FUNCTIONS ----------------------------- #
 class TypingTestApp:
     def __init__(self, root):
         self.root = root
@@ -173,7 +174,7 @@ class TypingTestApp:
         latest_typed_word = typed_words[-1]
         goal_word = self.target_words_list[self.current_word_index]
 
-        # Apply immediate colour highlight feedback based on a direct string match
+        # Apply immediate color highlight feedback based on a direct string match
         if latest_typed_word == goal_word:
             self.highlight_target_word(self.current_word_index, "correct")
         else:
@@ -274,6 +275,7 @@ class TypingTestApp:
         # Bring back original landing configuration page
         self.setup_frame.pack(fill="both", expand=True)
 
+# -------------------------- MAIN EXECUTION --------------------------- #
 if __name__ == "__main__":
     window = tk.Tk()
     app = TypingTestApp(window)

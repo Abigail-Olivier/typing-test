@@ -1,5 +1,6 @@
 from faker import Faker
 
+# ----------------------------- FUNCTIONS ----------------------------- #
 def generate_typing_text(mode_type, intensity):
     """
     Generates a block of text using Faker based on user settings.
